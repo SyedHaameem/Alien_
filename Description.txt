@@ -1,4 +1,4 @@
-In ALIEN INVASION ,the palyer controls a rocket ship that appears at the bottom center of the
+In ALIEN INVASION game ,the palyer controls a rocket ship that appears at the bottom center of the
 screen. the player can move he ship right and left using the arrow key and shoots the bullets 
 using the spacebar. when the game beigns,a fleet of the aliens fills the sky and moves across
 down the screen .The palyer shoots and destroys the aliens.If the player destroys all the alliens
