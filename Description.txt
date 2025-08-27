@@ -1,0 +1,7 @@
+In ALIEN INVASION ,the palyer controls a rocket ship that appears at the bottom center of the
+screen. the player can move he ship right and left using the arrow key and shoots the bullets 
+using the spacebar. when the game beigns,a fleet of the aliens fills the sky and moves across
+down the screen .The palyer shoots and destroys the aliens.If the player destroys all the alliens
+a new batch of the alliens come with the fast spped.If any allien hits the ship or reaches the 
+bottom of the screen ,the palyer loses the game.If the palyer loses three ships,the game ends.
+ 
