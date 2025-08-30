@@ -17,12 +17,15 @@ class Ship:
 
         #moving flag:start with the ship that is not moving 
         self.moving_right = False
+        self.moving_left = False
 
 
     def update(self):
         """Update the ship movement based om the moveent flag"""
         if self.moving_right:
             self.rect.x +=1
+        elif self.moving_left:
+            self.rect.x -=1
 
     def blitme(self):
         self.screen.blit(self.image,self.rect)
