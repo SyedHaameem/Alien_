@@ -28,6 +28,12 @@ class AlienInvasion:
             self._check_events()
             self.ship.update()
             self.bullets.update()
+
+            for bullet in self.bullets.copy():
+                if bullet.rect.bottom <=0:
+                    self.bullets.remove(bullet)
+
+
             self._update_screen()
     
        
@@ -75,8 +81,9 @@ class AlienInvasion:
 
     def _fire_bullet(self):
         """Craete anew bulllet and add it to a new bullet group"""
-        new_bullet = Bullet(self)
-        self.bullets.add(new_bullet)
+        if len(self.bullets) < self.settings.bullets_allowed:
+            new_bullet = Bullet(self)
+            self.bullets.add(new_bullet)
 
     def _update_screen(self):
         """updating images on the screen """
