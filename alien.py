@@ -11,6 +11,7 @@ class Alien(Sprite):
         super().__init__()
 
         self.screen = ai_game.screen
+        self.settings = ai_game.settings
 
         #load the alien
 
@@ -26,3 +27,9 @@ class Alien(Sprite):
         #store the exactt horizntal postiom of the alien 
 
         self.x = float(self.rect.x)
+
+    def update(self):
+        """Mpve the alian to the right."""
+
+        self.x += self.settings.alien_speed
+        self.rect.x = self.x
