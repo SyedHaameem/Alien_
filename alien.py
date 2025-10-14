@@ -28,8 +28,18 @@ class Alien(Sprite):
 
         self.x = float(self.rect.x)
 
-    def update(self):
-        """Mpve the alian to the right."""
 
-        self.x += self.settings.alien_speed
+    def check_edges(self):
+        """return true if the alien hits the screen"""
+
+        screen_rect = self.screen.get_rect()
+        return(self.rect.right >= screen_rect.right) or (self.rect.left <= 0)
+    
+
+    def update(self):
+        """Mpve the alian to the right or left"""
+
+        self.x += self.settings.alien_speed * self.settings.fleet_direction
         self.rect.x = self.x
+
+    
